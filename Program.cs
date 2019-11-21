@@ -34,7 +34,7 @@ namespace StudentExercises
             cohort35.Students.Add(heidiSpradlin);
             cohort35.Students.Add(sageKlein);
 
-            // Instructors Assining Exercises
+            // Instructors Assigning Exercises
             brendaLong.assignExercise(cohort35.Students, designClassWebsite);
             adamSheaffer.assignExercise(cohort35.Students, planYourHeist);
             adamSheaffer.assignExercise(cohort35.Students, dictionaryOfWords);
@@ -49,7 +49,7 @@ namespace StudentExercises
                 urbanPlanner
             });
 
-            // Generate Report Of Students Are Working On Each Exercise
+            // Report Of Students Working On Each Exercise
             foreach (Exercise exercise in cohort35.AllExercises)
             {
                 Console.WriteLine("");
