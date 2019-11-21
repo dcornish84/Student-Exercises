@@ -1,6 +1,7 @@
 using System;
+using System.Collections.Generic;
 
-namespace studentList
+namespace StudentExercises
 {
     class Student
     {
@@ -10,8 +11,17 @@ namespace studentList
 
         public string SlackHandle { get; set; }
 
-        public string StudentCohort { get; set; }
+        public int Cohort { get; set; }
 
-        public string StudentExercises { get; set; }
+        public List<Exercise> Exercises = new List<Exercise>();
+
+        // Constructor
+        public Student(string firstName, string lastName, string slackHandle, int cohort)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            SlackHandle = slackHandle;
+            Cohort = cohort;
+        }
     }
 }
