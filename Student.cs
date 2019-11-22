@@ -12,6 +12,7 @@ namespace StudentExercises
         public string SlackHandle { get; set; }
 
         public int Cohort { get; set; }
+        public IEnumerable<Exercise> ExerciseList { get; internal set; }
 
         public List<Exercise> Exercises = new List<Exercise>();
 
